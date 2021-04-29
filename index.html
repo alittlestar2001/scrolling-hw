@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+	    <style>
+         body {
+            height:3000px;
+         }
+         .char {
+            z-index: 10;
+            position: absolute;
+         }
+
+          #bg-block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: url('images/b01.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -webkit-filter: blur(5px);
+         }
+      </style>
+     
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+	   <script src="js/skrollr.min.js"></script>
+</head>
+
+
+
+<body>
+ <div id="bg-block">
+      </div>
+	  
+ <div class="char" style="top:150px;width:100%;text-align:center">
+         <img src="images/topic.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 1;-webkit-filter: blur(0px);" data-100="opacity: 0.5;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+      </div>
+	  
+      <div class="char skrollable " style="top: 300px; opacity: 1; right: -2000px; -webkit-filter: blur(0px);" data-0="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-300="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-600="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/horseman.png" style="width:400px;">
+      </div>
+
+      <div class="char skrollable " style="top: 600px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-300="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-600="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-900="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+         <img src="images/pumpkin.png" style="width:400px;">
+      </div>
+
+      <div class="char skrollable skrollable-before" style="top: 900px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-600="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-900="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1200="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="images/bat.png" style="width:400px;">
+      </div>
+      
+      <div class="char" style="top:2900px;width:100%;text-align:center">
+         <img src="images/con.png" style="width: 500px; opacity: 0; -webkit-filter: blur(5px);" data-2600="opacity: 0;-webkit-filter: blur(5px);" data-2800="opacity: 1;-webkit-filter: blur(0px);" class="skrollable skrollable-before">
+      </div>
+
+      <script type="text/javascript">
+      var skrollr_obj = skrollr.init();
+      </script>
+   
+</body>
+</html>
